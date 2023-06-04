@@ -111,6 +111,73 @@ namespace TriangleTest
         }
 
         [Test]
+        public void ValidScaleneTriangle_Input3and4and5_OutputValidScaleneTriangle()
+        {
+            //Arrange
+            int firstside = 3;
+            int secondside = 4;
+            int thirdside = 5;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+        [Test]
+        public void ValidScaleneTriangle_Input5and6and7_OutputValidScaleneTriangle()
+        {
+            //Arrange
+            int firstside = 5;
+            int secondside = 6;
+            int thirdside = 7;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void ValidScaleneTriangle_Input6and7and8_OutputValidScaleneTriangle()
+        {
+            //Arrange
+            int firstside = 6;
+            int secondside = 7;
+            int thirdside = 8;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input8and9and10_OutputValidScaleneTriangle()
+        {
+            //Arrange
+            int firstside = 8;
+            int secondside = 9;
+            int thirdside = 10;
+
+            string expected = "The triangle is valid and is a SCALENE";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
         public void ValidZeroLengthTriangle_Input0and0and0_OutputValidZeroLengthTriangle()
         {
 
