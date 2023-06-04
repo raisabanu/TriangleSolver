@@ -177,23 +177,111 @@ namespace TriangleTest
             Assert.AreEqual(expected, actual);
         }
 
+
         [Test]
-        public void ValidZeroLengthTriangle_Input0and0and0_OutputValidZeroLengthTriangle()
+        public void ValidZeroLengthTriangle_Input0and5and9_OutputValidZeroLengthTriangle()
+        {
+            //Arrange
+            int firstside = 0;
+            int secondside = 5;
+            int thirdside = 9;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+
+        [Test]
+        public void ValidZeroLengthTriangle_Input0and9and0_OutputValidZeroLengthTriangle()
         {
 
-           //Arrange
+            //Arrange
             int firstside = 0;
-            int secondside = 0;
+            int secondside = 9;
             int thirdside = 0;
 
             string expected = "At least one side of your triangle has a zero length and is thus invalid";
 
-          //Act
-          string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
 
-          //Assert
-           Assert.AreEqual(expected, actual);
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void ValidZeroLengthTriangle_Input8and0and9_OutputValidZeroLengthTriangle()
+        {
+            //Arrange
+            int firstside = 8;
+            int secondside= 0;
+            int thirdside = 9;
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [Test]
+        public void InvalidTriangle_Input6and2and3_OutputInvalidTriangle()
+        {
+            //Arrange
+            int firstside = 6;
+            int secondside = 2;
+            int thirdside = 3;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert    
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void InvalidTriangle_Input2and6and3_OutputInvalidTriangle()
+        {
+            //Arrange
+            int firstside = 2;
+            int secondside = 6;
+            int thirdside = 3;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert    
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void InvalidTriangle_Input3and3and6_OutputInvalidTriangle()
+        {
+            //Arrange
+            int firstside = 3;
+            int secondside = 3;
+            int thirdside = 6;
+
+            string expected = "A triangle cannot be formed with those numbers";
+
+            //Act
+            string actual = Triangle.AnalyzeTriangle(firstside, secondside, thirdside);
+
+            //Assert    
+            Assert.AreEqual(expected, actual);
+        }
+
 
     }
 }
