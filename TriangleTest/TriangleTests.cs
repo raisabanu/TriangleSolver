@@ -28,7 +28,7 @@ namespace TriangleTest
 
             //Assert
             Assert.AreEqual(expected, actual);
-        }
+        }       
 
         [Test]
 
