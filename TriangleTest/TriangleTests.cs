@@ -13,7 +13,7 @@ namespace TriangleTest
     {
         [Test]
 
-        public void ValidEquilateralTriangle_Input5and5and5_OutputValidEquilateralTriangle()
+        public void AnalyzeTriangle_input5and5and5_outputValidEquilateralTriangle()
         {
             //Arrange
 
@@ -32,9 +32,8 @@ namespace TriangleTest
 
         [Test]
 
-        public void ValidIsoscelesTriangle_Input4and5and5_OutputValidIsoscelesTriangle()
+        public void AnalyzeTriangle_input4and5and5_outputValidIsoscelesTriangle()
         {
-            //secondside is equal to thirdside
             //Arrange
             int firstside = 4;
             int secondside = 5;
@@ -53,9 +52,8 @@ namespace TriangleTest
 
         [Test]
 
-        public void ValidIsoscelesTriangle_Input4and4and5_OutputValidIsoscelesTriangle()
+        public void AnalyzeTriangle_input4and4and5_outputValidIsoscelesTriangle()
         {
-            //Firstside is equal to secondside
             //Arrange
             int firstside = 4;
             int secondside = 4;
@@ -72,9 +70,8 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidIsoscelesTriangle_Input7and6and7_OutputValidIsocelesTriangle()
+        public void AnalyzeTriangle_input7and6and7_outputValidIsocelesTriangle()
         {
-            //Firstside is equalto thirdside
             //Arrange
             ;
             int firstside = 7;
@@ -93,7 +90,7 @@ namespace TriangleTest
         }
         [Test]
 
-        public void ValidScaleneTriangle_Input4and5and6_OutputValidScaleneTriangle()
+        public void AnalyzeTriangle_input4and5and6_outputValidScaleneTriangle()
         {
             //Arrange
             int firstside = 4;
@@ -111,7 +108,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidScaleneTriangle_Input3and4and5_OutputValidScaleneTriangle()
+        public void AnalyzeTriangle_input3and4and5_outputValidScaleneTriangle()
         {
             //Arrange
             int firstside = 3;
@@ -128,7 +125,7 @@ namespace TriangleTest
 
         }
         [Test]
-        public void ValidScaleneTriangle_Input5and6and7_OutputValidScaleneTriangle()
+        public void AnalyzeTriangle_input5and6and7_outputValidScaleneTriangle()
         {
             //Arrange
             int firstside = 5;
@@ -144,7 +141,7 @@ namespace TriangleTest
             Assert.AreEqual(expected, actual);
         }
         [Test]
-        public void ValidScaleneTriangle_Input6and7and8_OutputValidScaleneTriangle()
+        public void AnalyzeTriangle_input6and7and8_outputValidScaleneTriangle()
         {
             //Arrange
             int firstside = 6;
@@ -161,7 +158,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidScaleneTriangle_Input8and9and10_OutputValidScaleneTriangle()
+        public void AnalyzeTriangle_input8and9and10_outputValidScaleneTriangle()
         {
             //Arrange
             int firstside = 8;
@@ -179,7 +176,7 @@ namespace TriangleTest
 
 
         [Test]
-        public void ValidZeroLengthTriangle_Input0and5and9_OutputValidZeroLengthTriangle()
+        public void AnalyzeTriangle_input0and5and9_outputValidZeroLengthTriangle()
         {
             //Arrange
             int firstside = 0;
@@ -198,7 +195,7 @@ namespace TriangleTest
 
 
         [Test]
-        public void ValidZeroLengthTriangle_Input0and9and0_OutputValidZeroLengthTriangle()
+        public void AnalyzeTriangle_input0and9and0_outputValidZeroLengthTriangle()
         {
 
             //Arrange
@@ -216,7 +213,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidZeroLengthTriangle_Input8and0and9_OutputValidZeroLengthTriangle()
+        public void AnalyzeTriangle_input8and0and9_outputValidZeroLengthTriangle()
         {
             //Arrange
             int firstside = 8;
@@ -234,7 +231,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void InvalidTriangle_Input6and2and3_OutputInvalidTriangle()
+        public void AnalyzeTriangle_input6and2and3_outputInvalidTriangle()
         {
             //Arrange
             int firstside = 6;
@@ -250,7 +247,7 @@ namespace TriangleTest
             Assert.AreEqual(expected, actual);
         }
         [Test]
-        public void InvalidTriangle_Input2and6and3_OutputInvalidTriangle()
+        public void AnalyzeTriangle_input2and6and3_outputInvalidTriangle()
         {
             //Arrange
             int firstside = 2;
@@ -266,7 +263,7 @@ namespace TriangleTest
             Assert.AreEqual(expected, actual);
         }
         [Test]
-        public void InvalidTriangle_Input3and3and6_OutputInvalidTriangle()
+        public void AnalyzeTriangle_input3and3and6_outputInvalidTriangle()
         {
             //Arrange
             int firstside = 3;
